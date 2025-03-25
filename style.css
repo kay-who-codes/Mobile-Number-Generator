@@ -1,0 +1,119 @@
+:root {
+    --primary: #6c5ce7;
+    --primary-dark: #5649c0;
+    --background: #1a1a2e;
+    --card-bg: #16213e;
+    --text: #e6e6e6;
+    --text-secondary: #b8b8b8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: var(--primary);
+}
+
+header p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.phone-display {
+    font-size: 2.2rem; /* Slightly smaller to fit the longer format */
+    font-weight: bold;
+    margin: 30px 0;
+    letter-spacing: 1px;
+    color: var(--primary);
+    padding: 15px;
+    background-color: rgba(108, 92, 231, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(108, 92, 231, 0.3);
+    word-break: keep-all; /* Prevent line breaks in the number */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn i {
+    font-size: 1rem;
+}
+
+#generateBtn {
+    background-color: #333;
+    color: var(--text);
+}
+
+#generateBtn:hover {
+    background-color: #444;
+}
+
+.call-btn {
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+}
+
+.call-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+footer {
+    margin-top: 30px;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+}
+
+@media (max-width: 480px) {
+    .phone-display {
+        font-size: 1.8rem;
+    }
+}
