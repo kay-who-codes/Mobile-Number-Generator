@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Update the call button href (proper format for tel: links)
         const dialableNumber = newNumber.replace(/\s/g, ''); // Remove all spaces
-        callBtn.href = `tel:${dialableNumber}`;
+        callBtn.href = `tel:141${dialableNumber}`;
     }
     
     // Initial generation
